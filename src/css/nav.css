@@ -1,26 +1,23 @@
-body {
-  font-family: var(--font);
-  line-height: 1.5;
-  color: var(--text-main);
-  background: var(--page-bg);
-}
-
-.app-shell {
-  min-height: 100vh;
-  background: linear-gradient(180deg, #ffffff 0%, var(--page-bg) 28%, var(--page-bg) 100%);
-}
-
-.page-shell {
-  width: min(var(--maxw), calc(100% - 40px));
-  margin: 0 auto;
-  padding: 0 0 32px;
-}
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+.inline-links {
+  display: inline-flex;
+  flex-wrap: wrap;
   gap: 18px;
 }
 
-.panel-full { grid-column: span 12; }
-.panel-half { grid-column: span 6; }
+.hero-nav {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: rgba(29, 29, 31, 0.54);
+  font-size: 15px;
+  line-height: 1.33;
+  letter-spacing: -0.24px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-link.active {
+  color: var(--text-main);
+  font-weight: 500;
+}

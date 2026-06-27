@@ -1,50 +1,17 @@
-/* ===== CSS 自定义属性（设计令牌）===== */
 :root {
-  --maxw: 1200px;
-
-  /* 颜色 */
+  --page-bg: #f5f5f7;
   --surface: #ffffff;
-  --surface-soft: #f5f5f7;
+  --surface-soft: #fbfbfd;
   --text-main: #1d1d1f;
-  --text-soft: #6e6e73;
-  --text-muted: #aeaeb2;
+  --text-soft: rgba(29, 29, 31, 0.72);
+  --text-muted: rgba(29, 29, 31, 0.56);
   --brand: #0071e3;
-  --border-soft: #d2d2d7;
-
-  /* 渐变（hero 标题用） */
-  --grad: linear-gradient(135deg, #0071e3 0%, #5e5ce6 50%, #bf5af2 100%);
-
-  /* 圆角 */
-  --radius-panel: 28px;
-  --radius-soft: 16px;
-
-  /* 阴影 */
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-@media (max-width: 834px) {
-  .panel-half { grid-column: span 12; }
-  .result-grid { grid-template-columns: 1fr; }
-  .identity-panel { grid-template-columns: 1fr; }
-  .lab-panel { min-height: auto; }
-}
-
-@media (max-width: 640px) {
-  .page-shell { width: min(var(--maxw), calc(100% - 24px)); }
-  .hero-stage { padding: 12px 0 20px; min-height: auto; }
-  .hero-topline {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 18px;
-  }
-  .hero-display { font-size: 48px; }
-  .hero-subtitle { margin-top: 14px; font-size: 18px; }
-  .brand-eyebrow { font-size: 18px; }
-  .panel { padding: 20px; border-radius: 24px; }
-  .panel-heading h3,
-  .featured-title,
-  .identity-value,
-  .result-badge strong { font-size: 24px; }
-  .identity-quote { font-size: 20px; }
+  --border-soft: rgba(29, 29, 31, 0.08);
+  --shadow: 3px 5px 30px rgba(0, 0, 0, 0.08);
+  --grad: linear-gradient(294deg, #ff00f7 0%, #1e98fd 100%);
+  --radius-panel: 32px;
+  --radius-soft: 18px;
+  --maxw: 980px;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
